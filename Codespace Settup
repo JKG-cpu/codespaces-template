@@ -1,0 +1,28 @@
+// .devcontainer/devcontainer.json
+{
+  "name": "Codespace", // 🔧 Change this to whatever name you want
+  "image": "mcr.microsoft.com/devcontainers/python:3.11", // 🔧 Change this if you want a different base image
+
+  "settings": {
+    "extensions": [
+      "zhuangtongfa.Material-theme"
+    ],
+    "settings": {
+      "workbench.colorTheme": "One Dark Pro"
+    }
+    "editor.fontSize": 14,
+    "editor.tabSize": 4
+  },
+
+  "postCreateCommand": "pip install -r requirements.txt", // 🐍 Will auto-install your pip packages
+
+  "extensions": [
+    "ms-python.python", // ✅ Add any VS Code extensions you like
+    "ms-toolsai.jupyter",
+    "esbenp.prettier-vscode"
+  ],
+
+  "forwardPorts": [],
+
+  "remoteUser": "vscode"
+}
